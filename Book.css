@@ -1,0 +1,89 @@
+/* Main section */
+main {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 122, 204, 0.7) 0%,
+    rgba(0, 61, 102, 0.9) 100%
+  );
+  padding: 10%;
+  padding-bottom: 0;
+  padding-top: 100px;
+  position: relative;
+}
+main img {
+  width: 30%;
+}
+main h1 {
+  font-size: clamp(40px, 8vw, 80px);
+  /* font-size: 5em; */
+  color: var(--first-color);
+}
+
+/* Appoinment section */
+.apo-sec {
+  padding: 10% 10% 5%;
+  gap: 10%;
+}
+.apo-sec form {
+  width: 60%;
+}
+.apo-sec form input,
+.apo-sec form select {
+  border-radius: 15px;
+}
+
+.con-info {
+  width: 40%;
+}
+.con-info img {
+  width: 80%;
+}
+.con-info p {
+  margin: 0;
+}
+.con-info h5 {
+  margin: 0;
+  margin-top: 20px;
+}
+.apo-sec form button {
+  background-color: rgba(0, 122, 204, 1);
+  color: var(--first-color);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+}
+.apo-sec form button:hover {
+  background-color: var(--second-color);
+}
+.go-right {
+  transition: all 0.5s;
+}
+.apo-sec form button:hover .go-right {
+  transform: translateX(10px);
+}
+
+@media only screen and (max-width: 850px) {
+  /* Main section responsive */
+  main {
+    height: 600px;
+    align-items: start !important;
+  }
+  main img {
+    width: clamp(250px, 45vw, 450px);
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+  }
+
+  /* Appoinment section responsive */
+  .apo-sec {
+    flex-direction: column;
+  }
+  .apo-sec form {
+    width: 100%;
+  }
+  .con-info {
+    width: 100%;
+    margin-top: 5%;
+  }
+}

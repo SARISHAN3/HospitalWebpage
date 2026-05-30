@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Webpage</title>
+
+    <!-- Font awsome icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Home.css" />
+  </head>
+  <body>
+    <!-- Overall container -->
+    <div class="container-fluid">
+      <!-- Full navbar -->
+      <header
+        class="head-bar d-flex justify-content-between align-items-center px-4 py-1"
+      >
+        <div
+          class="logo d-flex justify-content-center align-items-center rounded-circle"
+        >
+          <h1>Logo</h1>
+        </div>
+
+        <!-- mobile screen nav icon -->
+        <input type="checkbox" id="bar" />
+        <label for="bar">
+          <img src="./assets/Vector.png" alt="menu bar" />
+        </label>
+
+        <!-- nav section -->
+        <nav class="d-flex gap-5">
+          <a href="#home">Home</a>
+          <a href="./Treat.html">Treatments & Doctors</a>
+          <a href="./Book.html">Book Appointment</a>
+
+          <!-- contact button -->
+          <a href="./Book.html" class="con-Btn"><span>Contact</span></a>
+        </nav>
+      </header>
+
+      <!-- Main section -->
+      <main id="home">
+        <!-- background image -->
+        <!-- For transparant blue background -->
+        <div
+          class="main-bg position-relative justify-content-center align-items-center"
+        >
+          <div class="left-main">
+            <h1>Your Health, Our Priority</h1>
+            <!-- Policy section -->
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-lg-start align-items-center gap-4 mt-4"
+            >
+              <div class="policy-box d-flex flex-column align-items-center">
+                <div
+                  class="policyImgBox d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/mingcute--hand-heart-line.png"
+                    alt="hand holding heart image"
+                  />
+                </div>
+
+                <p class="d-flex gap-2 align-items-center">
+                  Compassionnate Care
+                </p>
+              </div>
+              <div class="policy-box d-flex flex-column align-items-center">
+                <div
+                  class="policyImgBox d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/ri--24-hours-line.png"
+                    alt="hand holding heart image"
+                  />
+                </div>
+
+                <p class="d-flex gap-2 align-items-center">
+                  24/7 Emergency Services
+                </p>
+              </div>
+              <div class="policy-box d-flex flex-column align-items-center">
+                <div
+                  class="policyImgBox d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/hugeicons--doctor-01.png"
+                    alt="hand holding heart image"
+                  />
+                </div>
+
+                <p class="d-flex gap-2 align-items-center">Trusted Doctors</p>
+              </div>
+            </div>
+
+            <!-- Main button section -->
+            <div
+              class="d-flex flex-wrap justify-content-center justify-content-sm-start gap-3 mt-3"
+            >
+              <button class="left-btn main-btn">Book Appointment</button>
+              <button class="right-btn main-btn">View Treatments</button>
+            </div>
+          </div>
+          <img
+            class="position-absolute"
+            src="./assets/Rectangle 3.png"
+            alt="main image"
+          />
+        </div>
+      </main>
+
+      <!-- Hospital sec -->
+      <section class="hospital-sec pb-1 d-flex position-relative">
+        <!-- Hospital content -->
+        <div class="hospital-sec-con">
+          <!-- Hospital heading -->
+          <h2 class="pb-4">
+            Welcome to <br />
+            Sri Veda Multispecialty Hospital
+          </h2>
+          <!-- Hospital image -->
+          <div class="hospital-sec-img mb-3">
+            <img src="./assets/pngwing.com (1) 1.png" alt="Doctors image" />
+          </div>
+          <div class="hospital-sec-txt">
+            <p>
+              We are a trusted name in healthcare, delivering world-class
+              treatment with a human touch. Our experienced medical team,
+              advanced technology, and ethical approach ensure every patient
+              receives the care they deserve.
+            </p>
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <img src="./assets/head.png" alt="head icon" />
+              <h3>Our Vision:</h3>
+            </div>
+            <p>
+              To be the most compassionate and accessible center of healing in
+              the region.
+            </p>
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <img src="./assets/hugeicons_target-02.png" alt="target icon" />
+              <h3>Our Mission:</h3>
+            </div>
+            <ul>
+              <li>To provide high-quality medical services to all</li>
+              <li>To make healthcare affordable and inclusive</li>
+              <li>To empower communities with preventive care</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Treatments section -->
+      <section class="treatment-sec pb-1 text-center">
+        <!-- Treat Heading -->
+        <h2 class="pb-4">Treatments We Offer</h2>
+        <!-- Treat over box -->
+        <div
+          class="treat-box-sec d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <div class="treat-box d-flex flex-column align-items-center">
+            <i class="fa-solid fa-baby"></i>
+            <p>Pediatrics</p>
+          </div>
+          <div class="treat-box d-flex flex-column align-items-center">
+            <i class="fa-solid fa-brain"></i>
+            <p>Neurology</p>
+          </div>
+          <div class="treat-box d-flex flex-column align-items-center">
+            <i class="fa-solid fa-bone"></i>
+            <p>Orthopaedics</p>
+          </div>
+          <div class="treat-box d-flex flex-column align-items-center">
+            <i class="fa-solid fa-heart"></i>
+            <p>Cardiology</p>
+          </div>
+        </div>
+        <!-- Treat button -->
+        <button class="treat-btn">View all Treatments</button>
+      </section>
+
+      <!-- Service section -->
+      <section class="service-sec pb-1 text-center">
+        <!-- Ser heading -->
+        <h2 class="pb-4">Services We Offer</h2>
+        <!-- Ser over box -->
+        <div
+          class="ser-over-box d-flex flex-wrap align-items-center justify-content-center"
+        >
+          <div class="ser-box">
+            <div class="ser-box-img">
+              <img src="./assets/ph_siren-bold.png" alt="siren icon" />
+            </div>
+            <p>24/7 Ambulance Service</p>
+          </div>
+          <div class="ser-box">
+            <div class="ser-box-img">
+              <img
+                src="./assets/Elderly--Streamline-Sharp-Material.png"
+                alt="siren icon"
+              />
+            </div>
+            <p>Senior Citizen Discounts</p>
+          </div>
+          <div class="ser-box">
+            <div class="ser-box-img">
+              <img
+                src="./assets/Health-And-Safety--Streamline-Sharp-Material.png"
+                alt="siren icon"
+              />
+            </div>
+            <p>Insurance Assistance</p>
+          </div>
+          <div class="ser-box">
+            <div class="ser-box-img">
+              <img
+                src="./assets/Family-Home--Streamline-Sharp-Material.png"
+                alt="siren icon"
+              />
+            </div>
+            <p>In-House Pharmacy</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Department section -->
+      <section class="department-sec pb-1 text-center">
+        <!-- Depart heading -->
+        <h2 class="pb-4">Departments</h2>
+        <!-- Depar over box with animation -->
+        <div class="d-flex">
+          <div class="dep-over-box">
+            <div>ICU & Emergency Unit</div>
+            <div>Surgical Ward</div>
+            <div>Radiology & Imaging</div>
+            <div>Maternity & Child Care</div>
+            <div>General OPD</div>
+          </div>
+          <!-- Dupicacte section for loop animation -->
+          <div class="dep-over-box">
+            <div>ICU & Emergency Unit</div>
+            <div>Surgical Ward</div>
+            <div>Radiology & Imaging</div>
+            <div>Maternity & Child Care</div>
+            <div>General OPD</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Doctors section -->
+      <section class="Doc-sec pb-1">
+        <h2 class="text-center pb-4 mx-auto">Our Specialists Doctors</h2>
+        <div
+          class="doc-over-box d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/doc1.png" alt="doctor 1" />
+                <span>Available</span>
+                <div class="doc-btn text-center">Dr. Jake</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/doc2.png" alt="doctor 1" />
+                <span>Available</span>
+                <div class="doc-btn text-center">Dr. Jake</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/doc3.png" alt="doctor 1" />
+                <span>Available</span>
+                <div class="doc-btn text-center">Dr. Jake</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/doc1.png" alt="doctor 1" />
+                <span>Available</span>
+                <div class="doc-btn text-center">Dr. Jake</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bed Avail section -->
+      <section class="bed-sec pb-1 mx-auto">
+        <h2 class="text-center pb-4">Bed Availability</h2>
+        <div
+          class="bed-over-box d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/icu_beds.png" alt="doctor 1" />
+                <span>Available Beds</span>
+                <div class="doc-btn text-center">ICU Beds</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="main-box">
+            <div class="over-box">
+              <div class="box">
+                <img src="./assets/general_beds.png" alt="doctor 1" />
+                <span>Available Beds</span>
+                <div class="doc-btn text-center">General Beds</div>
+              </div>
+            </div>
+            <div class="round d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- General OPD section -->
+      <section class="gen-sec pb-1 text-center">
+        <h2 class="pb-4">General OPD Hours</h2>
+        <div
+          class="gen-over-box d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <div class="gen-box">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              Monday-Saturday: <br />
+              9 AM - 6 PM
+            </p>
+          </div>
+          <div class="gen-box">
+            <i class="fa-solid fa-bed"></i>
+            <p>Emergency Services: 24/7</p>
+          </div>
+          <div class="gen-box">
+            <i class="fa-solid fa-phone"></i>
+            <p>Emergency Contact: +91-98765 43210</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews section -->
+      <section class="review-sec">
+        <h2 class="text-center pb-4">Patient Reviews</h2>
+        <div
+          class="review-over-box mx-auto d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <div class="review-out-box">
+            <div class="review-in-box">
+              <div class="review-box">
+                <img src="./assets/review.png" alt="review" />
+                <p>
+                  "Affordable and advanced treatment, Thankful for the free
+                  health camp."
+                </p>
+                <p class="author">M. Arun, Villupuram</p>
+              </div>
+            </div>
+            <div
+              class="review-round d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-out-box">
+            <div class="review-in-box">
+              <div class="review-box">
+                <img src="./assets/review.png" alt="review" />
+                <p>
+                  "Affordable and advanced treatment, Thankful for the free
+                  health camp."
+                </p>
+                <p class="author">M. Arun, Villupuram</p>
+              </div>
+            </div>
+            <div
+              class="review-round d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="review-out-box">
+            <div class="review-in-box">
+              <div class="review-box">
+                <img src="./assets/review.png" alt="review" />
+                <p>
+                  "Affordable and advanced treatment, Thankful for the free
+                  health camp."
+                </p>
+                <p class="author">M. Arun, Villupuram</p>
+              </div>
+            </div>
+            <div
+              class="review-round d-flex justify-content-between align-items-center"
+            >
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer>
+        <!-- over all div -->
+        <div
+          class="foot-over d-flex flex-wrap justify-content-evenly align-items-start"
+        >
+          <!-- Logo sec -->
+          <div>
+            <div
+              class="logo d-flex justify-content-center align-items-center rounded-circle"
+            >
+              <h1>Logo</h1>
+            </div>
+            <p>Healing with compassion, excellence, and commitment</p>
+          </div>
+          <!-- Links sec -->
+          <div class="foot-links d-flex flex-column">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">Appointments</a>
+            <a href="#">Contact</a>
+          </div>
+          <!-- Contact sec -->
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <i class="fa-solid fa-location-dot"></i> 123 Health Road, Chennai,
+              TN - 600001
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> contact@srivedahospital.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +91-98765 43210</p>
+          </div>
+          <!-- Follow us sec -->
+          <div>
+            <h4>Follow Us:</h4>
+            <div class="followUs">
+              <p>
+                <i class="fa-brands fa-facebook"></i>
+                <span>@SriVedaHospital</span>
+              </p>
+              <p>
+                <i class="fa-brands fa-instagram"></i>
+                <span>@SriVeda_Hospital</span>
+              </p>
+              <p>
+                <i class="fa-brands fa-x-twitter"></i> <span>@SriVedaHosp</span>
+              </p>
+              <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <span>linkedin.com/company/SriVedaHospital</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">
+          &copy; 2025 Sri Veda Multispecialty Hospital. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

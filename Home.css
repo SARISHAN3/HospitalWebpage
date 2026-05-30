@@ -1,0 +1,545 @@
+/* Main Section */
+main {
+  padding-top: 100px;
+  background-image: url(./assets/image\ 8.png);
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: var(--first-color);
+}
+.main-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 122, 204, 0.7) 0%,
+    rgba(0, 61, 102, 0.9) 100%
+  );
+}
+.left-main {
+  position: relative;
+  padding: 5% 10%;
+  z-index: 1;
+}
+.main-bg img {
+  width: clamp(200px, 50vw, 500px);
+  right: 10%;
+  top: 10%;
+}
+main h1 {
+  width: 300px;
+  font-size: clamp(60px, 9vw, 90px);
+}
+
+/* Policy section */
+.policy-box {
+  width: 200px;
+  text-align: center;
+}
+.policy-box img {
+  width: clamp(20px, 5vw, 40px);
+}
+.policyImgBox {
+  width: clamp(40px, 6vw, 60px);
+  height: clamp(40px, 6vw, 60px);
+  background-color: var(--third-color);
+  border-radius: 50%;
+}
+.policy-box p {
+  font-size: clamp(10px, 2vw, 16px);
+}
+.policy-box p::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* main button section */
+.main-btn {
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 30px;
+  font-size: clamp(10px, 2.5vw, 20px);
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: all 0.8s;
+  border: none;
+}
+.main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 0%;
+  border-radius: 20px;
+  transition: all 0.8s;
+  z-index: -1;
+}
+.left-btn {
+  background-color: var(--third-color);
+  color: var(--first-color);
+}
+.left-btn::before {
+  left: 0;
+  background-color: var(--first-color);
+}
+.left-btn:hover {
+  background-color: transparent;
+  color: black;
+}
+.left-btn:hover::before {
+  width: 98%;
+  height: 90%;
+}
+.right-btn {
+  background-color: var(--first-color);
+}
+.right-btn::before {
+  right: 0;
+  background-color: var(--third-color);
+}
+.right-btn:hover {
+  background-color: transparent;
+  color: var(--first-color);
+}
+.right-btn:hover::before {
+  width: 98%;
+  height: 90%;
+}
+
+/* Hospital section */
+.hospital-sec {
+  padding: 10%;
+}
+.hospital-sec-con {
+  width: clamp(250px, 50vw, 550px);
+}
+
+/* hospital image */
+.hospital-sec-img {
+  background-color: var(--second-color);
+  padding: 10px;
+  border-radius: 50px 50px 50px 0;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+/* hospital image disign */
+.hospital-sec-img::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 120px;
+  height: 120px;
+  border-left: 20px solid rgba(46, 125, 50, 0.3);
+  border-bottom: 20px solid rgba(46, 125, 50, 0.3);
+  /* border-radius: 20px; */
+}
+.hospital-sec-img::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -30px;
+  right: -30px;
+  background-color: rgba(46, 125, 50, 0.3);
+  clip-path: path(
+    "M 0,10 A 10,10 0 0 1 10,0 L 70,0 A 50,50 0 0 1 120,50 L 120,110 A 10,10 0 0 1 110,120 A 10,10 0,0,1 100,110 L 100,50 A 40,40 0 0 0 70,20 L 10,20 A 10,10 0 0 1 0,10 Z"
+  );
+}
+.hospital-sec-con {
+  font-size: 20px;
+}
+.hospital-sec-txt {
+  position: relative;
+  z-index: 1;
+}
+.hospital-sec-txt p:first-child {
+  text-indent: 50px;
+}
+.hospital-sec-txt img {
+  width: 40px;
+}
+.hospital-sec-txt h3 {
+  font-weight: 700;
+}
+
+/* Treatments section */
+.treatment-sec {
+  padding: 10%;
+}
+.treat-box-sec {
+  gap: 10px;
+}
+.treat-box {
+  background-color: var(--second-color);
+  color: var(--first-color);
+  width: clamp(180px, 20vw, 250px);
+  padding: 60px;
+  border-radius: 30px;
+  gap: clamp(30px, 3vw, 60px);
+  font-weight: 500;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.treat-box:hover {
+  transform: translateY(-30px);
+}
+.treat-box i {
+  font-size: clamp(60px, 6.5vw, 120px);
+}
+.treat-btn {
+  width: 150px;
+  padding: 5px 30px;
+  border-radius: 40px 0;
+  border: none;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.8s;
+}
+.treat-btn:hover {
+  border-radius: 0 40px;
+  box-shadow: 0 0 4px 2px var(--second-color);
+}
+
+/* Services section */
+.service-sec {
+  padding: 10%;
+}
+.ser-over-box {
+  gap: 10px;
+}
+.ser-box {
+  width: 250px;
+  padding: 30px;
+  border: 1px solid var(--second-color);
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.ser-box:hover .ser-box-img {
+  scale: 1.2;
+}
+.ser-box p {
+  width: 130px;
+  margin: 1rem auto 0;
+}
+.ser-box-img {
+  background-color: var(--second-color);
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.8s;
+}
+.ser-box-img img {
+  width: 100px;
+}
+
+/* Department section */
+.department-sec {
+  overflow: hidden;
+  padding-top: 10%;
+}
+.dep-over-box {
+  display: inline-flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+  padding-right: 20px;
+}
+.dep-over-box div {
+  font-weight: 500;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding: 15px;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* Pause animation when hovering parent */
+.d-flex:hover .dep-over-box {
+  animation-play-state: paused;
+}
+/* Animation scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Doctors section */
+.Doc-sec {
+  padding: 5%;
+  padding-top: 10%;
+}
+.doc-over-box {
+  gap: 30px;
+}
+.box span {
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  color: var(--second-color);
+  padding: 2px 10px;
+  display: inline-block;
+  margin: 5px;
+  align-items: center;
+}
+.box span::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  margin-right: 10px;
+}
+.doc-btn {
+  width: 150px;
+  background-color: var(--second-color);
+  color: var(--first-color);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.circle-right-arrow {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--second-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* eneven shape with border like design */
+.main-box {
+  width: 300px;
+  height: 370px;
+  position: relative;
+}
+/* .main-box:hover .box,
+.main-box:hover .round {
+  background-color: lightgray;
+} */
+.over-box {
+  width: 100%;
+  height: 100%;
+  background: var(--second-color);
+  clip-path: path(
+    "M 0,30 A 30,30 0,0,1 30,0 L 270,0 A 30,30 0,0,1 300,30 L 300,265 A 35,35 0,0,1 265,300  A 30,30 0,0,0 230,335 A 35,35 0,0,1 195,370 L 30,370 A 30,30 0,0,1 0,340 L 0,30 Z"
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  background: var(--first-color);
+  clip-path: path(
+    "M 0,30 A 30,30 0,0,1 30,0 L 270,0 A 30,30 0,0,1 300,30 L 300,265 A 35,35 0,0,1 265,300  A 30,30 0,0,0 228,335 A 35,35 0,0,1 195,370 L 30,370 A 30,30 0,0,1 0,340 L 0,30 Z"
+  );
+  scale: 0.98;
+  padding: 10px;
+  transition: all 0.5s;
+}
+.box img {
+  width: 100%;
+}
+.round {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  border: 4px solid var(--second-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+.round i {
+  font-size: 20px;
+  color: var(--second-color);
+  font-weight: 700;
+}
+.main-box:hover .over-box, .main-box:hover .doc-btn, .main-box:hover .box span::before {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+.main-box:hover .box, .main-box:hover .round {
+  background-color: var(--second-color);
+}
+.main-box:hover .round i {
+  color: var(--first-color);
+}
+.main-box:hover .box span {
+  color: var(--first-color);
+  border-color: var(--first-color);
+}
+
+/* Bed Avail section */
+.bed-sec {
+  padding: 10%;
+}
+.bed-over-box {
+  gap: 50px;
+}
+
+/* General OPD section */
+.gen-sec {
+  padding: 10%;
+}
+.gen-over-box {
+  font-size: 20px;
+  font-weight: 700;
+  gap: 50px;
+}
+.gen-box {
+  width: 200px;
+}
+.gen-over-box p {
+  color: var(--second-color);
+}
+
+/* Reviews section */
+.review-sec {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.review-out-box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transition: all 0.5s;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+/* When ANY box is hovered → blur all */
+.review-over-box:has(.review-out-box:hover) .review-out-box {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+/* Keep hovered one clear */
+.review-over-box:has(.review-out-box:hover) .review-out-box:hover {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.05);
+}
+.review-in-box {
+  width: 100%;
+  height: 100%;
+  background: var(--second-color);
+  clip-path: path(
+    "M 0,30 A 30,30 0,0,1 30,0 L 270,0 A 30,30 0,0,1 300,30 L 300,195 A 30,30 0,0,1 270,225 L 145,225 A 40,40 0,0,0 100,270 A 30,30 0,0,1 70,300 L 30,300 A 30,30 0,0,1 0,270 L 0,30 Z"
+  );
+  /*border: none;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.review-box {
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: path(
+    "M 0,30 A 30,30 0,0,1 30,0 L 270,0 A 30,30 0,0,1 300,30 L 300,195 A 30,30 0,0,1 270,224 L 145,224 A 40,40 0,0,0 96,268 A 30,30 0,0,1 75,300 L 30,300 A 30,30 0,0,1 0,270 L 0,30 Z"
+  );
+  /*border: none;*/
+  scale: 0.98;
+  padding: 10px;
+}
+.review-round {
+  width: 190px;
+  height: 70px;
+  border-radius: 30px 30px 50px 30px;
+  border: 3.5px solid var(--second-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+}
+.review-box img {
+  width: 100%;
+}
+.review-box p {
+  margin: 0;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.author::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: black;
+  margin: 5px;
+  margin-left: 10px;
+  display: inline-block;
+}
+.review-round i {
+  color: var(--second-color);
+  font-size: 20px;
+}
+.review-over-box {
+  gap: 40px;
+}
+
+@media only screen and (max-width: 850px) {
+  /* main section responsive */
+  main {
+    padding-top: 80px;
+  }
+  main h1 {
+    width: 250px;
+  }
+  .policy-box p::before {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* Hospital section responsive */
+  .hospital-sec-con {
+    width: 100%;
+  }
+  .hospital-sec-img {
+    position: relative;
+    width: 90%;
+    top: 0;
+    right: 0;
+    margin: 5% auto;
+  }
+  .hospital-sec-img img {
+    width: 100%;
+  }
+  .hospital-sec-txt {
+    margin-top: 10%;
+  }
+
+  /* Treatments section responsive*/
+  .treat-box {
+    padding: 40px;
+  }
+
+  /* Doctors section responsive */
+  .Doc-sec {
+    padding: 0%;
+    padding-top: 10%;
+  }
+
+  /* Bed Avail section responsive */
+  .bed-sec {
+    padding: 0%;
+  }
+}
